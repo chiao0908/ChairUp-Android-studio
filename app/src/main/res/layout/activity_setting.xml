@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digi.setting">
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#3048d1"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Ruby!"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="38dp">
+    </TextView>
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已使用智慧坐墊第55天!"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:layout_below="@+id/hello">
+
+    </TextView>
+    <Button
+        android:id="@+id/line"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/day"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@drawable/line">
+    </Button>
+    <TextView
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="桌上型小物"
+        android:layout_below="@+id/line"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="38dp">
+
+    </TextView>
+    <Switch
+        android:id="@+id/wifi"
+        android:text="wifi連接"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        >
+
+    </Switch>
+    <Switch
+        android:id="@+id/style"
+        android:text="坐姿不正提醒"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifi"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp">
+
+    </Switch>
+    <Switch
+        android:id="@+id/toolong"
+        android:text="久坐提醒"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/style"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        >
+
+    </Switch>
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="提醒設定"
+        android:layout_below="@+id/toolong"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="38dp">
+    </TextView>
+    <Switch
+        android:id="@+id/stylentc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notice"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:text="坐姿不正提醒"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </Switch>
+    <Switch
+        android:id="@+id/toolongntc"
+        android:text="久坐提醒"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stylentc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp">
+    </Switch>
+
+
+    <TextView
+        android:id="@+id/logout"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登出"
+        android:layout_below="@+id/toolongntc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:textStyle="bold"
+        android:textColor="#000000">
+
+    </TextView>
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plus"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7174ff"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:id="@+id/bt1layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:background="#7174ff"
+        android:orientation="vertical"
+        tools:ignore="DuplicateIds">
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mainwhite">
+        </Button>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:text="首頁"
+            android:textSize="20sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bt2layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:background="#7174ff"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/diarywhite">
+        </Button>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:textSize="20sp"
+            android:text="日記"
+            android:textColor="#ffffff">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bt3layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:background="#7174ff"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/analysiswhite"
+            >
+        </Button>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:textSize="20sp"
+            android:text="分析"
+            android:textColor="#ffffff">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bt4layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:background="#7174ff"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/settingblue">
+        </Button>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:textSize="20sp"
+            android:text="設定"
+            android:textColor="#feeb1a">
+
+        </TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

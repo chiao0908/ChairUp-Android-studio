@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digi.plus">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#3048d1"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◀"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020年10月"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/now">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/calendarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="130dp">
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:minDate="09/30/2020"
+            android:focusedMonthDateColor="#feeb1a"
+            android:background="#BBBDFF">
+        </CalendarView>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/motion"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/calendarlayout"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="心情指數"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/star1"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+        </Button>
+        <Button
+            android:id="@+id/star2"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+        <Button
+            android:id="@+id/star3"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+        <Button
+            android:id="@+id/star4"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+        <Button
+            android:id="@+id/star5"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/comfortable"
+        android:layout_below="@id/motion"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="舒適度    "
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <Button
+            android:id="@+id/star6"
+            android:layout_marginLeft="5dp"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+        </Button>
+        <Button
+            android:id="@+id/star7"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+        <Button
+            android:id="@+id/star8"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+        <Button
+            android:id="@+id/star9"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+        <Button
+            android:id="@+id/star10"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:background="@drawable/star">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/o2"
+        android:layout_below="@id/o1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="上背痛"
+android:id="@+id/topb"
+            android:layout_weight="1"
+            android:background="@drawable/position">
+        </Button>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="下背痛"
+android:id="@+id/downb"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/position">
+
+        </Button>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="腰痛"
+            android:id="@+id/waist"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/position">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/o1"
+        android:layout_below="@id/comfortable"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="頸部"
+            android:id="@+id/neck"
+            android:layout_weight="1"
+            android:background="@drawable/position">
+        </Button>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="左肩"
+            android:id="@+id/lefts"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/position">
+
+        </Button>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="右肩"
+            android:id="@+id/rights"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/position">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/note"
+        android:layout_below="@id/o2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="筆記"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp">
+
+        </TextView>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/note">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/step3"
+            android:text="儲存"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp">
+
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

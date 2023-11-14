@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digi.analysis">
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#3048d1"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近七日分析"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/infom"
+        android:layout_below="@id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="平均"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        ></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="坐姿正確率"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            ></TextView>
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:background="@drawable/yellow"
+                            android:gravity="center_vertical"
+                            android:layout_height="100dp">
+                            <TextView
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="38%"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                ></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:text="七日內"
+                            android:textSize="20dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最長連續坐時"
+                            android:textColor="#000000"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:background="@drawable/yellow"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="100dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0小時"
+                                android:textColor="#000000"
+                                android:textSize="17dp">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="27分鐘"
+                                android:textColor="#000000"
+                                android:textSize="17dp">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/chart"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="經常酸痛位置 :"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        >
+                    </TextView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/underline">
+
+                        </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="下背部  (可能原因 : 常翹腳)"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="左肩  (可能原因 : 重心偏右側)"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推薦伸展運動 :"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="20dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/underline">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="右手將頭向右邊輕壓，左手協助以伸展頸部肌肉(反向重複)。每個動作持續五秒，重複做10次"
+                        android:textColor="#000000"
+                        android:textStyle="bold">
+                    </TextView>
+                    <ImageView
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/p1">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="雙手向外擴胸，再平行收合於胸前，以伸展背部和胸部肌肉。每個動作持續5秒，重複做10次。"
+                            android:textColor="#000000"
+                            android:textStyle="bold">
+                        </TextView>
+                        <ImageView
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p2">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="翹左腳身體向左彎，雙手抓椅背，以伸展腰部和下肢肌肉（反向重複）。每個動作持續5秒，重複做10次。"
+                            android:textColor="#000000"
+                            android:textStyle="bold">
+                        </TextView>
+                        <ImageView
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p3">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="翹左腳，雙手抱左腳尖，身體向前彎貼近左腳，以伸展腰部和四肢肌肉（反向重複）。每個動作持續5秒，重複做10次。"
+                            android:textColor="#000000"
+                            android:textStyle="bold">
+                        </TextView>
+                        <ImageView
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p4">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="雙腳併攏，身體向前彎，前胸貼近大腿，雙手盡量向地板靠近。此時，腰部要打平，雙手平行慢慢抬起做最大的伸展背部肌肉（維持胸部和腰部一直線）。每個動作持續5秒，重複做10次。"
+                            android:textColor="#000000"
+                            android:textStyle="bold">
+                        </TextView>
+                        <ImageView
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p5">
+
+                        </ImageView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plus"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+    </Button>
+    <LinearLayout
+        android:id="@+id/buttomtab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7174ff"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/bt1layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center"
+            android:background="#7174ff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/mainwhite">
+            </ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:text="首頁"
+            android:textSize="20sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bt2layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:background="#7174ff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/diarywhite">
+        </ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:textSize="20sp"
+            android:text="日記"
+            android:textColor="#ffffff">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bt3layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:background="#7174ff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/analysisblue">
+        </ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:textSize="20sp"
+            android:text="分析"
+            android:textColor="#feeb1a">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bt4layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:background="#7174ff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/settingwhite">
+        </ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#7174ff"
+            android:textSize="20sp"
+            android:text="設定"
+            android:textColor="#ffffff">
+
+        </TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

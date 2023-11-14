@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digi.step">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#00219f"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◀"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正確坐姿三步驟"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/coshion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp">
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/step3picture">
+
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coshion3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step1 "
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000">
+
+    </TextView>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雙腳大大張開坐下"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/s"
+        android:layout_below="@id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深深地坐進椅子裡，雙腿打開，背部打直。"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step2 "
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="先將腰部反折，再慢慢拱腰回復姿勢"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000">
+
+        </TextView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fo"
+            android:layout_below="@id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="緩緩施力將腰部反折並挺胸，然後再慢慢將上半身往前，恢復腰部的彎度。"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000">
+
+            </TextView>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step3 "
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="感覺到下腹部用力就停住"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/si"
+        android:layout_below="@id/fi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="腰部回復彎度時，因為背部肌肉的緊繃狀態解除，自然會感覺到下腹部某處會用力，此時請停止動作。只要保持這個坐姿，就算將雙腳合起來也沒關係"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000">
+
+        </TextView>
+    </LinearLayout>
+    <EditText
+        android:layout_marginLeft="100dp"
+        android:hint="身高"
+        android:id="@+id/high"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/si"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:inputType="number">
+
+    </EditText>
+    <EditText
+        android:layout_marginLeft="200dp"
+        android:hint="體重"
+        android:layout_marginTop="3dp"
+        android:id="@+id/weight"
+        android:layout_below="@id/si"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:inputType="number">
+
+    </EditText>
+    <Button
+        android:layout_below="@id/si"
+        android:id="@+id/input"
+        android:text="輸入"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/step3"
+        android:textColor="#000000"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </Button>
+
+<Button
+    android:id="@+id/ensure"
+    android:layout_below="@id/si"
+    android:layout_marginTop="60dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/step3"
+    android:text="確認正確坐姿"
+    android:visibility="invisible"
+    android:textColor="#000000"
+    android:textSize="20dp">>
+
+</Button>
+</RelativeLayout>
